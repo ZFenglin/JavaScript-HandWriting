@@ -77,7 +77,7 @@ function _instanceof(left, right) {
     let proto = Object.getPrototypeOf(left)
     prototype = right.prototype
     while (proto) {
-        if (proto === right.prototype) {
+        if (proto === prototype) {
             return true
         }
         proto = Object.getPrototypeOf(proto);
